@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  h1= response
+    p Welcome to ps4
+  form(action='http://localhost:3000/ps4', method='POST')
+    p
+      | city:
+      input(type='text', name='city', value='')
+    input(type='submit', value='Submit')
